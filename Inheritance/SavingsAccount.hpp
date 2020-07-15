@@ -1,5 +1,5 @@
-#ifndef _SAVINGSACCOUNT_H_
-#define _SAVINGSACCOUNT_H_
+#ifndef SavingsAccount_hpp
+#define SavingsAccount_hpp
 #include "Account.hpp"
 
 class SavingsAccount: public Account{
@@ -10,4 +10,4 @@ public:
     void withdraw(double amount);
 };
 
-#endif /* _SAVINGSACCOUNT_H_ */
+#endif /* SavingsAccount_hpp */

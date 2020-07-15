@@ -1,5 +1,5 @@
-#ifndef _ACCOUNT_H_
-#define _ACCOUNT_H_
+#ifndef Account_hpp
+#define Account_hpp
 
 class Account{
 public:
@@ -9,4 +9,4 @@ public:
     ~Account();
 };
 
-#endif /* _ACCOUNT_H_ */
+#endif /* Account_hpp */
