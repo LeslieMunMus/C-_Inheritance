@@ -21,6 +21,18 @@ int main(){
     
     //Using the Savings Account class
     cout << "\n===Savings Account==============================" << endl;
+    SavingsAccount savings;
+    savings.deposit(5000.00);
+    savings.withdraw(2500.00);
+    cout << endl;
+    
+    SavingsAccount *ptr_savings;
+    ptr_savings = new SavingsAccount();
+    ptr_savings->deposit(7800.00);
+    ptr_savings->withdraw(2300.00);
+    delete ptr_savings;
+    
+    cout << "\n================================================" << endl;
     
     return 0;
 }
