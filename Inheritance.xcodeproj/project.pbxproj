@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48040CFD24BF11E50091ED8F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48040CFC24BF11E50091ED8F /* main.cpp */; };
 		48040D0524BF1D4F0091ED8F /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48040D0324BF1D4F0091ED8F /* Account.cpp */; };
+		48040D0824BF20280091ED8F /* SavingsAccount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48040D0624BF20280091ED8F /* SavingsAccount.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		48040CFC24BF11E50091ED8F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		48040D0324BF1D4F0091ED8F /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
 		48040D0424BF1D4F0091ED8F /* Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
+		48040D0624BF20280091ED8F /* SavingsAccount.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SavingsAccount.cpp; sourceTree = "<group>"; };
+		48040D0724BF20280091ED8F /* SavingsAccount.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SavingsAccount.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				48040CFC24BF11E50091ED8F /* main.cpp */,
 				48040D0324BF1D4F0091ED8F /* Account.cpp */,
 				48040D0424BF1D4F0091ED8F /* Account.hpp */,
+				48040D0624BF20280091ED8F /* SavingsAccount.cpp */,
+				48040D0724BF20280091ED8F /* SavingsAccount.hpp */,
 			);
 			path = Inheritance;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			files = (
 				48040CFD24BF11E50091ED8F /* main.cpp in Sources */,
 				48040D0524BF1D4F0091ED8F /* Account.cpp in Sources */,
+				48040D0824BF20280091ED8F /* SavingsAccount.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
