@@ -1,7 +1,8 @@
 #include "SavingsAccount.hpp"
 #include <iostream>
 
-SavingsAccount::SavingsAccount(){
+SavingsAccount::SavingsAccount()
+: interst_rate(0.03){
 }
 
 SavingsAccount::~SavingsAccount(){

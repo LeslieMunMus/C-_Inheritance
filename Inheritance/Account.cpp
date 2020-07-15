@@ -1,7 +1,8 @@
 #include "Account.hpp"
 #include <iostream>
 
-Account::Account(){
+Account::Account()
+: balance(0.0), name("Account"){
 }
 
 Account::~Account(){

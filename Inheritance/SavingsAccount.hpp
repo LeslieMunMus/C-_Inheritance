@@ -4,6 +4,7 @@
 
 class SavingsAccount: public Account{
 public:
+    double interst_rate;
     SavingsAccount();
     ~SavingsAccount();
     void deposit(double amount);

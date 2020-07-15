@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Account.hpp"
 #include "SavingsAccount.hpp"
+#include <string>
 
 using namespace std;
 
@@ -9,6 +10,7 @@ int main(){
     //Using the Account class
     cout << "\n===Account======================================" << endl;
     Account acc{};
+    acc.name = "General Account";
     acc.deposit(2000.00);
     acc.withdraw(500.00);
     cout << endl;
@@ -21,12 +23,13 @@ int main(){
     
     //Using the Savings Account class
     cout << "\n===Savings Account==============================" << endl;
-    SavingsAccount savings;
+    SavingsAccount savings{};
+    savings.name = "Savings Account";
     savings.deposit(5000.00);
     savings.withdraw(2500.00);
     cout << endl;
     
-    SavingsAccount *ptr_savings;
+    SavingsAccount *ptr_savings{nullptr};
     ptr_savings = new SavingsAccount();
     ptr_savings->deposit(7800.00);
     ptr_savings->withdraw(2300.00);
