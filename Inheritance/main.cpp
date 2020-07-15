@@ -10,7 +10,8 @@ int main(){
     //Using the Account class
     cout << "\n===Account======================================" << endl;
     Account acc{};
-    acc.name = "General Account";
+    acc.setName("General Account");
+    cout << "Account name: " << acc.getName() << endl;
     acc.deposit(2000.00);
     acc.withdraw(500.00);
     cout << endl;
@@ -24,9 +25,13 @@ int main(){
     //Using the Savings Account class
     cout << "\n===Savings Account==============================" << endl;
     SavingsAccount savings{};
-    savings.name = "Savings Account";
+    savings.setName("Savings Account");
+    cout << "Account name: " << savings.getName() << endl;
     savings.deposit(5000.00);
     savings.withdraw(2500.00);
+    savings.setRate(1.03);
+    cout << "With an interest rate of " << savings.getRate() << ". New balance is "
+         << savings.calcNewBalance(5000.00, 2500.00);
     cout << endl;
     
     SavingsAccount *ptr_savings{nullptr};

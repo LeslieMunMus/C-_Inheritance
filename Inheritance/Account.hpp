@@ -4,12 +4,20 @@
 
 class Account{
 public:
-    double balance;
-    std::string name;
     void deposit(double amount);
     void withdraw(double amount);
     Account();
     ~Account();
+    void setName(std::string name);
+    std::string getName();
+    
+protected:
+    double balance;
+    std::string name;
+    
+private:
+    bool account_status; //set to True if the account is active
+    
 };
 
 #endif /* Account_hpp */

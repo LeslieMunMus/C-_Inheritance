@@ -2,7 +2,7 @@
 #include <iostream>
 
 SavingsAccount::SavingsAccount()
-: interst_rate(0.03){
+: interest_rate(0.03){
 }
 
 SavingsAccount::~SavingsAccount(){
@@ -14,4 +14,17 @@ void SavingsAccount::deposit(double amount){
 
 void SavingsAccount::withdraw(double amount){
     std::cout << "Savings Account withdraw called with " << amount << std::endl;
+}
+
+void SavingsAccount::setRate(double interest_rate){
+    this->interest_rate = interest_rate;
+}
+
+double SavingsAccount::getRate() const{
+    return interest_rate;
+}
+
+double SavingsAccount::calcNewBalance(double deposit, double withdraw){
+    balance = (deposit - withdraw) * interest_rate;
+    return balance;
 }
